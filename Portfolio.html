@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        /* Header Section */
+        header {
+            background-image: 
+                radial-gradient(at 10% 20%, #764ba2 0px, transparent 50%),
+                radial-gradient(at 80% 0%, #667eea 0px, transparent 50%),
+                radial-gradient(at 0% 80%, #9300a391 0px, transparent 50%);
+            background-color: #764ba2;
+            border-radius: 0 0 100px 100px;
+            padding: 100px 20px 80px 20px;
+            text-align: center; /* อย่าลืมบรรทัดนี้เพื่อให้ชื่อและปุ่มอยู่ตรงกลาง */
+            color: white;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+            box-shadow: 20px 20px 50px rgb(0, 0, 0),   /* เงาดำด้านล่าง */
+        }
+        /* Section Styling */
+        section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h2 {
+            border-bottom: 2px solid #764ba2;
+            padding-bottom: 10px;
+            color: #764ba2;
+        }
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-tag {
+            background: #eef2ff;
+            color: #4338ca;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        /* Contact Button */
+        .cta-btn {
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+        }
+        /* จัดกลุ่มปุ่มให้เรียงข้างกัน */
+        .button-container {
+            display: flex;
+            justify-content: center; /* วางไว้ตรงกลาง */
+            gap: 15px;              /* ระยะห่างระหว่างปุ่ม */
+            margin-top: 20px;
+            flex-wrap: wrap;        /* ถ้าจอมือถือแคบ ให้ปุ่มตกลงมาข้างล่างอัตโนมัติ */
+        }
+
+        /* ปรับแต่งปุ่ม GitHub ให้เด่นต่างออกไป (Optional) */
+        .github-btn {
+            background: #333 !important; /* สีดำแบบ GitHub */
+            border: 1px solid #555;
+        }
+
+        .github-btn:hover {
+            background: #444 !important;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3) !important;
+        }
+        </style>
+    </head>
+    
+    <body>
+    <header>
+        <img src="https://i.postimg.cc/Dz4DZmCq/my-profile-jpg.jpg" alt="Profile Picture">
+        <h1>PAIWAN PHICHAIRATTANAJINDA</h1>
+        <p>Frontend Developer / Graphic Designer</p>
+        
+        <div class="button-container">
+            <a href="https://www.facebook.com/ked.jakkapan/" class="cta-btn" target="_blank">ติดต่อฉัน</a>
+            <a href="https://github.com/paiwanpphi-dev" target="_blank" rel="noopener noreferrer" class="cta-btn github-btn">ไปที่ GitHub</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>ผมเป็น Graphic Designer ที่มีความหลงใหลในการสร้างสรรค์ผลงานผ่านการเขียนโค้ด<br> 
+                จุดแข็งของผมคือการออกแบบที่เน้นความสวยงามและตอบโจทย์ผู้ใช้งาน<br> 
+                (User-Centric Design)</p>
+        </section>
+
+        <section id="skills" data-aos="fade-up" data-aos-delay="200">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <span class="skill-tag">HTML / CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">UI/UX Design</span>
+                <span class="skill-tag">Adobe Photoshop / Illustrator</span>
+                <span class="skill-tag">Video Editing</span>
+            </div>
+        </section>
+
+        <section id="experience" data-aos="fade-up" data-aos-delay="200">
+            <h2>Experience</h2>
+            <div>
+                <h3>ตำแหน่งงาน | บริษัท Aura Rich</h3>
+                <p><em>2022 - 2024</em></p>
+                <ul>
+                    <li>รับผิดชอบงานด้านการจัดทำสื่อออนไลน์ และการออกแบบ</li>
+                    <li>ความสำเร็จที่สำคัญคือ ออกแบบ Info-graphic ที่เปลี่ยนเนื้อหายากๆ ให้เข้าใจง่ายขึ้น จนมีคนแชร์ต่อในโซเชียลมีเดียเป็นจำนวนมาก</li>
+                </ul>
+                <h3>ตำแหน่งงาน | บริษัท Hometouch</h3>
+                <p><em>2024 - 2026</em></p>
+                <ul>
+                    <li>รับผิดชอบงานออกแบบ และจัดทำสื่อออนไลน์</li>
+                    <li>ความสำเร็จที่สำคัญคือ ออกแบบ Logo และ Mood & Tone ให้กับโปรเจกต์ จนแบรนด์ดูมีความเป็นมืออาชีพและน่าเชื่อถือมากขึ้น</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" data-aos="fade-up" data-aos-delay="200">
+            <h2>Contact</h2>
+            <p>📧 Email: paiwan.pphi@gmail.com</p>
+            <p>☎️ Tel: 093-6168885/</p>
+            <p>📱 GitHub: https://github.com/paiwanpphi-dev</p>
+        </section>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // ระยะเวลาการเคลื่อนไหว (1000 = 1 วินาที)
+            once: true,     // ให้แสดงแอนิเมชั่นแค่ครั้งเดียวตอนเลื่อนลง (ไม่ต้องทำซ้ำตอนเลื่อนขึ้น)
+        });
+    </script>
+    </body>
+</html>
